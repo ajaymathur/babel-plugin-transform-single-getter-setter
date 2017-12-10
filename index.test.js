@@ -1,5 +1,5 @@
-const babel = require('babel-core');
-const plugin = require('./');
+const babel = require("babel-core");
+const plugin = require("./");
 
 var example = `
 class Alert {
@@ -7,9 +7,9 @@ class Alert {
     return VERSION
   }
  }
-`
+`;
 
-it('matches snapshot', () => {
-	const {code} = babel.transform(example, {plugins: [plugin]});
-	expect(code).toMatchSnapshot();
+it("matches snapshot", () => {
+  const { code } = babel.transform(example, { plugins: [plugin] });
+  expect(code).toMatchSnapshot();
 });
