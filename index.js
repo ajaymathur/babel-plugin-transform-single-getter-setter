@@ -4,15 +4,7 @@ module.exports = function({types: t}) {
   return {
     visitor: {
       ClassMethod(path) {
-        let {node} = path;
-        console.log(node.body);
-      //   console.log(path.findParent((path) => {
-      //     if (!path.isClassDeclaration()) {
-      //       return ;
-      //     }
-      //     return path.node.id.name
-      //   }
-      // ))
+        const {node} = path;
         if(['set', 'get'].indexOf(node.kind) > -1) {
           if(path.inList && path.container && path.container.length === 1) {
             let CLASS_NAME;

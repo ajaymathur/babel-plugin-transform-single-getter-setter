@@ -10,6 +10,7 @@
     "babel-template": "^6.26.0"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0"
+    "babel-core": "^6.26.0",
+    "jest": "^21.2.1"
   }
 }

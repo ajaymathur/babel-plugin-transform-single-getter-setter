@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works 1`] = `
+"
+class Alert {
+  Object.defineProperty(Alert, \\"VERSION\\", {
+    get: function () {
+      return VERSION;
+    },
+    enumerable: true,
+    configurable: true
+  });
+}"
+`;
